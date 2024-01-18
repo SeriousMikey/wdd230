@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-size: large;
+    font-family: Raleway, sans-serif;
+}
+
+header {
+    background: darkgreen;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 1px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background: rgb(229, 229, 229);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid grey;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.card h3 {
+    background: rgb(9, 78, 9);
+    padding: 5px;
+    color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 0;
+}
+
+.card img {
+    display: block;
+    width: 95%;
+    margin: 20px auto;
+    border: 1px solid grey;
+}
+
+.card p, .card a {
+    padding-left: 20px;
+}
+
+footer {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 1px;
+    background: darkgreen;
+    color: white;
+}
