@@ -35,7 +35,7 @@ nav a:hover {
 }
 
 nav a {
-    display: block;
+    display: none;
     text-decoration: none;
     padding: 10px;
     color: white;
@@ -88,4 +88,35 @@ footer {
     text-align: center;
     padding: 1px;
     font-size: large;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    background: darkgreen;
+    border: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+    font-size: 1.5rem;
+    color: black;
+}
+
+.open a {
+	display: block;
+}
+
+nav a.active::before {
+    content: "-> ";
+}
+
+nav a.active::after {
+    content: " <-";
 }

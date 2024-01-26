@@ -15,9 +15,17 @@
 
     nav {
         display: flex;
+        flex-direction: row;
     }
 
     nav a {
-        padding-left: 12%;
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
     }
 }
