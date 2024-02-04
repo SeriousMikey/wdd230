@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+/* Viewport 600px or less */
+
+body {
+    font-family: Dosis;
+    background: #F4EDED;
+}
+
+header {
+    background: #0A090C;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+header img {
+    width: 65%;
+    max-width: 350px;
+}
+
+nav {
+    background: #0A090C;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+}
+
+nav a {
+    color: #49C6E5;
+    text-decoration: none;
+    display: none;
+    font-size: large;
+}
+
+nav a:hover {
+    background: #FF9505;
+    color: #0A090C;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: #49C6E5;
+    border: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+    font-size: 1.5rem;
+    color: black;
+}
+
+.open a {
+	display: block;
+}
+
+nav a.active::before {
+    content: "-> ";
+    color: #F4EDED;
+}
+
+nav a.active::after {
+    content: " <-";
+    color: #F4EDED;
+}
+
+#call_to_action {
+    position: relative;
+}
+
+#call_to_action img {
+    width: 100%;
+}
+
+#call_to_action #join {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: none;
+    background: #ff9705c2;
+    border-radius: 5px;
+    font-size: larger;
+    width: 50%;
+    height: 12%;
+    color:#0A090C
+}
+
+#call_to_action #join:hover {
+    background: #ff9705;
+    cursor: pointer;
+}
+
+#current_events, #weather, .ad {
+    border: 2px solid #FF9505;
+    color: #707078;
+    margin: 15px auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 7px;
+}
+
+#current_events h2, #weather h2 {
+    color: #0A090C;
+    text-align: center;
+}
+
+#current_events h4 {
+    text-align: center;
+}
+
+#spotlight {
+    margin: 50px auto;
+}
+
+#spotlight h1 {
+    text-align: center;
+}
+
+.ad {
+    border: 2px solid #49C6E5;
+}
+
+.ad h2 {
+    color: #0A090C;
+    text-align: center;
+}
+
+.ad p {
+    text-align: center;
+}
+
+.contact_info {
+    color: #0A090C;
+    padding: 1px 1px 15px 1px;
+    text-align: center;
+    border: 2px solid #FF9505;
+    border-radius: 15px;
+}
+
+.contact_info a {
+    color: #0A090C;
+}
+
+footer {
+    background: #0A090C;
+    color: #49C6E5;
+    padding: 5px;
+}
+
+footer img {
+    max-width: 40%;
+    min-width: 200px;
+    float: left;
+    padding-left: 15px;
+}
+
+footer h3, footer p {
+    text-align: center;
+}
+
+#student_info {
+    color: #FF9505;
+}
+
+#student_info {
+    text-align: center;
+}

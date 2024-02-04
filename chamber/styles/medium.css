@@ -1,0 +1,21 @@
+/* Viewport 601 to 1100 */
+
+@media screen and (min-width: 601px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+}
