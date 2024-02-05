@@ -1,0 +1,43 @@
+/* Viewport 701 to 1100 */
+
+@media screen and (min-width: 701px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        flex: 1 1 100%;
+        border-left: 1px solid #FF9505;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #information {
+        display: grid;
+        grid-template-columns: 70% 28%;
+    }
+
+    #ads {
+        display: flex;
+    }
+
+    #ads .ad {
+        max-width: 400px;
+        margin-left: 10px auto;
+        margin-right: 10px auto;
+    }
+
+    #call_to_action #join {
+        height: 7%;
+    }
+
+    header img {
+        margin: auto;
+    }
+}

@@ -16,7 +16,7 @@ header {
 
 header img {
     width: 65%;
-    max-width: 350px;
+    max-width: 320px;
 }
 
 nav {
@@ -76,7 +76,10 @@ nav a.active::after {
 }
 
 #call_to_action img {
+    display: block;
     width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 #call_to_action #join {
@@ -90,7 +93,8 @@ nav a.active::after {
     border-radius: 5px;
     font-size: larger;
     width: 50%;
-    height: 12%;
+    min-width: fit-content;
+    max-width: 350px;
     color:#0A090C
 }
 
@@ -106,14 +110,15 @@ nav a.active::after {
     padding: 10px;
     width: 90%;
     border-radius: 7px;
+    text-align: center;
 }
 
-#current_events h2, #weather h2 {
+#current_events h2, #weather h2, .ad h2 {
     color: #0A090C;
     text-align: center;
 }
 
-#current_events h4 {
+#current_events h4, #spotlight h1 {
     text-align: center;
 }
 
@@ -121,21 +126,8 @@ nav a.active::after {
     margin: 50px auto;
 }
 
-#spotlight h1 {
-    text-align: center;
-}
-
 .ad {
     border: 2px solid #49C6E5;
-}
-
-.ad h2 {
-    color: #0A090C;
-    text-align: center;
-}
-
-.ad p {
-    text-align: center;
 }
 
 .contact_info {
@@ -160,7 +152,6 @@ footer img {
     max-width: 40%;
     min-width: 200px;
     float: left;
-    padding-left: 15px;
 }
 
 footer h3, footer p {
