@@ -27,7 +27,6 @@ nav {
     text-align: center;
     margin: auto;
     font-size: large;
-    margin-bottom: 20px;
 }
 
 nav a:hover {
@@ -45,6 +44,21 @@ nav a {
 main {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+main picture img{
+    width: 100%;
+    height: auto;
+}
+
+main label {
+    position: absolute;
+    border: 1px solid black;
+    padding: 20px;
+    left: 50px;
+    top: 200px;
+    background: rgba(171, 171, 171, 0.75);
+    text-wrap: nowrap;
 }
 
 main h2 {
