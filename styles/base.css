@@ -58,7 +58,7 @@ main label {
     left: 50px;
     top: 200px;
     background: rgba(171, 171, 171, 0.75);
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 main h2 {
