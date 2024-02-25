@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layton Chamber of Commerce</title>
+    <meta name="author" content="Michael Hyer">
+    <meta 
+    name="description" 
+    content="Chamber of Commerce website for the city of Layton.">
+    <meta property="og:title" content="Layton Chamber of Commerce">
+    <meta property="og:description" content="Learn and grow with your community!">
+    <meta property="og:url" content="https://seriousmikey.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://media.istockphoto.com/id/1330083413/photo/park-city-utah-usa.webp?b=1&s=612x612&w=0&k=20&c=JBOdhFLIZZWmoaSaF50ft2IZcfcASsrj5Dswfo3Ttfc=">
+    <meta property="og:type" content="Website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/big_logo.webp" alt="Big Logo">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="discover.html" class="active">Discover</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+    </nav>
+    <main id="discover-grid">
+        <section id="sidebar">
+            <div class="sidebar-content">
+                <h1>Your Statistics</h1>
+                <span id="visits"></span>
+            </div>
+            <div class="sidebar-content">
+                <h1>Demographics</h1>
+                <p>Did you know that 70% of our regular users are male?</p>
+            </div>
+            <div class="sidebar-content">
+                <h1>General Statistics</h1>
+                <p>Studies have shown that at least 85% of the members of the Layton Chamber of Commerce, that participate in events regularly, are more successful in business.</p>
+            </div>
+            <div class="sidebar-content">
+                <h1>Events</h1>
+                <p>All members of the Layton Chamber of Commerce are invited for brunch at Cindy's house on Friday the 13th! (She has cats)</p>
+            </div>
+        </section>
+        <section id="pictures">
+            <h1>Layton AT&T Store</h1>
+            <picture>
+                <img src="images/at&t.webp" alt="Layton AT&T Store" loading="lazy">
+            </picture>
+            <h1>Layton Hotel</h1>
+            <picture>
+                <img src="images/hotel.webp" alt="Layton Hotel" loading="lazy">
+            </picture>
+            <h1>Layton Mall</h1>
+            <picture>
+                <img src="images/mall.webp" alt="Layton Mall" loading="lazy">
+            </picture>
+            <h1>Layton Marketplace</h1>
+            <picture>
+                <img src="images/marketplace.webp" alt="Layton Marketplace" loading="lazy">
+            </picture>
+            <h1>Layton McDonald's</h1>
+            <picture>
+                <img src="images/mcdonalds.webp" alt="Layton McDonald's" loading="lazy">
+            </picture>
+            <h1>Layton RCWilley</h1>
+            <picture>
+                <img src="images/rcwilley.webp" alt="Layton RCWilley" loading="lazy">
+            </picture>
+        </section>
+    </main>
+    <footer>
+        <img src="images/small_logo.webp" alt="Small Logo">
+        <h3>Layton Chamber of Commerce</h3>
+        <p>240 West Deer Lane</p>
+        <p>email@email.com</p>
+        <p>+222-333-4444</p>
+        <p>Location Map</p>
+        <hr>
+        <div id="student_info">
+            <p id="yearInfo">&#169;Current Year<br>Michael Hyer<br>Utah</p>
+            <p>Project for WDD230</p>
+            <p id="lastModified">Last modified</p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/getvisits.js"></script>
+</body>
+</html>
