@@ -1,0 +1,80 @@
+:root {
+    --color: green;
+    --background: rgb(216, 216, 216);
+    --border: grey;
+}
+
+#info {
+    margin: 10px;
+    max-width: 700px;
+}
+
+#info h1 {
+    margin-left: 20px;
+}
+
+#info label {
+    display: block;
+    margin: 15px;
+    color: var(--color);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    display: block;
+    margin: 5px;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    background: var(--background);
+    color: rgb(85, 85, 85);
+    appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="rating"]:focus {
+    outline: none;
+    border: 2px solid var(--color);
+}
+
+#rating {
+	width: 180px;
+	margin-bottom: 0;
+    margin-left: .5rem;
+}
+
+#rate {
+    font-size: 1.8rem;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: black;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 185px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+#info input[type="submit"] {
+    padding: .75rem;
+    color: white;
+    background: green;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 350px;
+    margin: 1rem 2% 2rem 2%;
+    font-size: 1.3rem;
+}

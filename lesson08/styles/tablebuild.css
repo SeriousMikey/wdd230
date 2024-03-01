@@ -1,0 +1,44 @@
+caption {
+    caption-side: bottom;
+}
+
+table {
+    border: 1px solid rgb(174, 174, 174, 0.5);
+    border-collapse: collapse;
+}
+
+td {
+    border-right: 1px solid rgb(174, 174, 174, 0.5);
+    border-top: 1px solid rgb(174, 174, 174, 0.5);
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+th {
+    background: rgb(49, 49, 49);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-right: 1px solid rgba(56, 56, 56);
+    border-bottom: 1px solid rgba(56, 56, 56);
+    font-size: larger;
+}
+
+#big-title {
+    background: black;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+#placeholder {
+    background: black;
+    border-right: 1px solid black;
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(227, 227, 227);
+}
