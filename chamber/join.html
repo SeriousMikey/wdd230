@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layton Chamber of Commerce</title>
+    <meta name="author" content="Michael Hyer">
+    <meta 
+    name="description" 
+    content="Chamber of Commerce website for the city of Layton.">
+    <meta property="og:title" content="Layton Chamber of Commerce">
+    <meta property="og:description" content="Learn and grow with your community!">
+    <meta property="og:url" content="https://seriousmikey.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://media.istockphoto.com/id/1330083413/photo/park-city-utah-usa.webp?b=1&s=612x612&w=0&k=20&c=JBOdhFLIZZWmoaSaF50ft2IZcfcASsrj5Dswfo3Ttfc=">
+    <meta property="og:type" content="Website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/big_logo.webp" alt="Big Logo">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="#">Directory</a>
+        <a href="join.html" class="active">Join</a>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html">
+            <h1 id="form-title">Membership Request Form</h1>
+            <fieldset>
+                <div>Personal Information</div>
+                <label>First Name <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name <input type="text" name="lname" id="lname" required></label>
+                <label>Current Position <input type="text" name="position" id="position" pattern="[A-Za-z\s\-]{7,}" required></label>
+                <label>Email <input type="email" name="email" id="email" placeholder="someone@email.com" required></label>
+                <label>Phone Number <input type="tel" name="phone" id="phone" required></label>
+
+                <div>Business Information</div>
+                <label>Business's Name <input type="text" name="bname" id="bname" required></label>
+                <label>Business's Description:</label>
+                <label><textarea name="bdesc" id="bdesc"></textarea></label>
+                
+                <div>Membership Level</div>
+                <label><input type="radio" name="membership" value="NP Membership is for non profit organizations and there is no fee."> NP Membership (non profit organizations)</label>
+                <label><input type="radio" name="membership" value="Bronze Membership" required> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="Silver Membership" required> Silver Membership</label>
+                <label><input type="radio" name="membership" value="Gold Membership" required> Gold Membership</label>
+                <label><input type="hidden" name="hidden" id="hidden" value="none"></label>
+            </fieldset>
+            <input type="submit" value="Send Request">
+        </form>
+        <section id="benefits">
+            <div class="membership">
+                <h1 id="np">NP Membership</h1>
+                <h2>FREE</h2>
+                <ul>
+                    <li>Access to regular updates and newsletters about the organization's activities and impact</li>
+                    <li>Invitation to annual general meetings or member-exclusive events</li>
+                    <li>Opportunity to volunteer for projects or initiatives</li>
+                    <li>Recognition on the organization's website or annual report</li>
+                    <li>Ability to provide feedback and suggestions for improvement</li>
+                    <li>Discounted rates for merchandise or special events organized by the non-profit</li>
+                </ul>
+            </div>
+            <div class="membership">
+                <h1 id="bronze">Bronze Membership</h1>
+                <h2>$9.99 Monthly</h2>
+                <ul>
+                    <li>All benefits of NP Membership</li>
+                    <li>Exclusive access to member-only resources such as webinars, workshops, or educational materials</li>
+                    <li>Limited-time discounts or early-bird access to tickets for events or conferences</li>
+                    <li>Recognition as a bronze member on the organization's website or publications</li>
+                    <li>Priority customer support or dedicated helpline for membership queries</li>
+                    <li>Special offers or discounts from partner organizations</li>
+                </ul>
+            </div>
+            <div class="membership">
+                <h1 id="silver">Silver Membership</h1>
+                <h2>$19.99 Monthly</h2>
+                <ul>
+                    <li>All benefits of Bronze Membership</li>
+                    <li>Priority registration and seating at events or conferences</li>
+                    <li>Access to premium content such as in-depth reports, case studies, or industry insights</li>
+                    <li>Personalized support or consultation sessions with experts in relevant fields</li>
+                    <li>Silver Member badge or designation on the organization's website or materials</li>
+                    <li>Exclusive networking opportunities with other silver members or industry leaders</li>
+                </ul>
+            </div>
+            <div class="membership">
+                <h1 id="gold">Gold Membership</h1>
+                <h2>$29.99 Monthly</h2>
+                <ul>
+                    <li>All benefits of Silver Membership</li>
+                    <li>VIP treatment at events, including access to VIP lounges or receptions</li>
+                    <li>Complimentary or heavily discounted tickets to flagship events or premium conferences</li>
+                    <li>Customized recognition or sponsorship opportunities for projects or initiatives within the organization</li>
+                    <li>Special gifts or tokens of appreciation for gold members</li>
+                    <li>Access to private forums or online communities for networking and collaboration with other gold members</li>
+                    <li>Dedicated account manager or liaison for personalized assistance and support</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="images/small_logo.webp" alt="Small Logo">
+        <h3>Layton Chamber of Commerce</h3>
+        <p>240 West Deer Lane</p>
+        <p>email@email.com</p>
+        <p>+222-333-4444</p>
+        <p>Location Map</p>
+        <hr>
+        <div id="student_info">
+            <p id="yearInfo">&#169;Current Year<br>Michael Hyer<br>Utah</p>
+            <p>Project for WDD230</p>
+            <p id="lastModified">Last modified</p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/formdates.js"></script>
+</body>
+</html>

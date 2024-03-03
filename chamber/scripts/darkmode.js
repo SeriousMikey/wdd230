@@ -6,10 +6,13 @@ const ad = document.querySelectorAll(".ad");
 const contactInfo = document.querySelectorAll(".ad .contact_info");
 const contactLink = document.querySelectorAll(".contact_info a");
 
+const input = document.getElementsByTagName("form");
+
 darkButton.addEventListener("click", () => {
     body.classList.toggle("dark");
     currentEvents.classList.toggle("dark");
     weather.classList.toggle("dark");
+    form.classList.toggle("dark");
     ad.forEach(instance => {
         instance.classList.toggle("dark");
         });
@@ -17,6 +20,9 @@ darkButton.addEventListener("click", () => {
         instance.classList.toggle("dark");
     });
     contactLink.forEach(instance => {
+        instance.classList.toggle("dark");
+    });
+    input.forEach(instance => {
         instance.classList.toggle("dark");
     });
 });

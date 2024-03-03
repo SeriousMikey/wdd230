@@ -290,3 +290,104 @@ picture, .sidebar-content {
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
+
+form {
+    margin: 10px;
+    max-width: 700px;
+}
+
+form label {
+    display: block;
+    margin: 15px;
+    color: #49C6E5;
+}
+
+form div {
+    display: block;
+    margin: 35px 15px 0 15px;
+    color: #FF9505;
+    font-size: larger;
+    font-weight: bold;
+}
+
+form input[type="radio"] {
+    margin-left: 10px;
+}
+
+form textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+#form-title {
+    text-align: center;
+}
+
+form input[type="submit"] {
+    padding: .75rem;
+    color: #0A090C;
+    background: white;
+    border: 1px solid #0A090C;
+    border-radius: 6px;
+    width: 50%;
+    max-width: 350px;
+    min-width: fit-content;
+    margin: 1rem 25% 2rem 25%;
+    font-size: 1.3rem;
+}
+
+#benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.membership h1, .membership h2{
+    text-align: center;
+}
+
+.membership {
+    border: 3px solid #0A090C;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    max-width: 350px;
+    min-width: 300px;
+}
+
+#bronze {
+    color: rgb(126, 57, 20);
+}
+
+#silver {
+    color: rgb(133, 133, 133);
+}
+
+#gold {
+    color: rgb(182, 154, 0);
+}
+
+#thanks {
+    text-align: center;
+    margin-top: 20%;
+}
+
+#home-button {
+    text-decoration: none;
+    border: 1px solid black;
+    color: #F4EDED;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background: #0A090C;
+}
+
+#home-button:hover {
+    color: #49C6E5;
+}
+
+#home-container {
+    text-align: center;
+}
