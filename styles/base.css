@@ -92,6 +92,14 @@ main h2 {
     color: darkgreen;
 }
 
+.card a::after {
+    content: " | ";
+}
+
+.card a:last-child::after {
+    content: "";
+}
+
 .card ul li {
     padding: 2px;
 }

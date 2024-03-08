@@ -1,0 +1,40 @@
+header {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background: rgb(188, 188, 188);
+    border-radius: 6px;
+    box-shadow: 0 0 30px #777;
+}
+
+#cards section {
+    margin: 0.15rem;
+    padding: 0.35rem;
+    background-color: #6edd63;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+  }
+
+#cards h2 {
+    color: green;
+}
+
+#cards img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #024400;
+    height: 200px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+}

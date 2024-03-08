@@ -1,0 +1,134 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "https://codepen.io/Momma/pen/wvOddow",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Web Design Principles"
+                },
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/combinators.webp",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Momma/pen/zYbPxje",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "https://codepen.io/Momma/pen/JjzOoag",
+                    "title": "Hamburger Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Momma/pen/xxBWaRr",
+                    "title": "Pseudo-Classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "BOM Top 10"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "lesson07/bom10/bom.html",
+                    "title": "New BOM Top 10"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "lesson08/form/index.html",
+                    "title": "Followed Form"
+                },
+                {
+                    "url": "form.html",
+                    "title": "My Form"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "New Ward Members"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "url",
+                    "title": "title"
+                }
+            ]
+        }
+    ]
+}
