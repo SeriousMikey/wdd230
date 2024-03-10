@@ -391,3 +391,84 @@ form input[type="submit"] {
 #home-container {
     text-align: center;
 }
+
+#buttons {
+	margin: 1rem auto;
+	text-align: right;
+    margin-right: 50px;
+}
+
+#buttons button {
+	padding: 1rem 2rem;
+    margin: 15px;
+    margin-bottom: 0;
+    border-radius: 6px;
+    background: white;
+}
+
+#buttons button:hover {
+    background: rgb(189, 189, 189);
+    cursor: pointer;
+}
+
+#grid-mode {
+    border: 1px solid #49C6E5;
+}
+
+#list-mode {
+    border: 1px solid #FF9505;
+}
+
+.grid-mode {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+	justify-items: center;
+    margin: 50px;
+}
+
+.grid-mode section {
+    border: 1px solid white;
+    border-radius: 6px;
+    background: white;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 0 10px #333;
+}
+
+.grid-mode img {
+    max-height: 100px;
+    margin: 25px auto;
+}
+
+.list-mode {
+	display: flex;
+	flex-direction: column;
+    margin: 50px;
+}
+
+.list-mode section {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 1rem;
+    background: white;
+}
+
+.list-mode section img {
+	display: none;
+}
+
+.list-mode section h3 {
+	font-size: 1rem;
+    text-align: left;
+}
+
+.list-mode section:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.066);
+}
+
+.list-mode a {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

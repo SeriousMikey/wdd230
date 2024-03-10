@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layton Chamber of Commerce</title>
+    <meta name="author" content="Michael Hyer">
+    <meta 
+    name="description" 
+    content="Chamber of Commerce website for the city of Layton.">
+    <meta property="og:title" content="Layton Chamber of Commerce">
+    <meta property="og:description" content="Learn and grow with your community!">
+    <meta property="og:url" content="https://seriousmikey.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://media.istockphoto.com/id/1330083413/photo/park-city-utah-usa.webp?b=1&s=612x612&w=0&k=20&c=JBOdhFLIZZWmoaSaF50ft2IZcfcASsrj5Dswfo3Ttfc=">
+    <meta property="og:type" content="Website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/big_logo.webp" alt="Big Logo">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="#">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
+    <main>
+        <div id="buttons">
+            <button  id="grid-mode">Cool Grid</button>
+            <button id="list-mode">Nice List</button>
+        </div>
+        <div id="display" class="grid-mode"></div>
+    <footer>
+        <img src="images/small_logo.webp" alt="Small Logo">
+        <h3>Layton Chamber of Commerce</h3>
+        <p>240 West Deer Lane</p>
+        <p>email@email.com</p>
+        <p>+222-333-4444</p>
+        <p>Location Map</p>
+        <hr>
+        <div id="student_info">
+            <p id="yearInfo">&#169;Current Year<br>Michael Hyer<br>Utah</p>
+            <p>Project for WDD230</p>
+            <p id="lastModified">Last modified</p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>

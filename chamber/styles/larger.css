@@ -76,5 +76,20 @@
         grid-column: 2/3;
     }
 
-    picture img:hover {box-shadow: 0 0 50px #FF9505;}
+    picture img:hover {
+        box-shadow: 0 0 50px #FF9505;
+    }
+
+    .grid-mode {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    
+    .list-mode a, .list-mode p, .list-mode h3 {
+        margin: 15px;
+    }
+
+    .list-mode section {
+        grid-template-columns: 1fr 1fr 1fr .5fr 1fr;
+        text-align: center;
+    }
 }
