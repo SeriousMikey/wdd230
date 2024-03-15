@@ -92,4 +92,9 @@
         grid-template-columns: 1fr 1fr 1fr .5fr 1fr;
         text-align: center;
     }
+
+    #banner h1 {
+        padding: 7rem;
+        font-size: 3vw;
+    }
 }

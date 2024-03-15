@@ -1,6 +1,8 @@
 let baseURL = "https://seriousmikey.github.io/wdd230/";
 let linksURL = "https://seriousmikey.github.io/wdd230/data/links.json";
 
+let lessonNumber = 0;
+
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
@@ -11,8 +13,8 @@ async function getLinks() {
 const displayLinks = (weeks) => {
     i = 1;
     weeks.forEach(week => {
-        let lessonNumber = document.getElementById(`0${i}`);
-
+        lessonNumber = document.getElementById(`0${i}`);
+        
         let linksVar = week.links;
     
         let number = 0;

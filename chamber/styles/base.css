@@ -106,12 +106,13 @@ nav a.active::after {
 
 #current_events, #weather, .ad {
     border: 2px solid #FF9505;
-    color: #707078;
+    color: rgb(73, 73, 73);
     margin: 15px auto;
     padding: 10px;
     width: 90%;
     border-radius: 7px;
     text-align: center;
+    background: #F4EDED;
 }
 
 #current_events h2, #weather h2, .ad h2 {
@@ -227,22 +228,6 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-body.dark {
-    background: #444444;
-}
-
-#current_events.dark, #weather.dark, .ad.dark {
-    color: #F4EDED;
-}
-
-.contact_info.dark {
-    color: #F4EDED;
-}
-
-.contact_info a.dark {
-    color: #F4EDED;
-}
-
 .sidebar-content, #pictures h1 {
     text-align: center;
 }
@@ -292,20 +277,18 @@ picture, .sidebar-content {
 }
 
 form {
-    margin: 10px;
+    margin: 10px 50px;
     max-width: 700px;
 }
 
 form label {
     display: block;
     margin: 15px;
-    color: #49C6E5;
 }
 
 form div {
     display: block;
     margin: 35px 15px 0 15px;
-    color: #FF9505;
     font-size: larger;
     font-weight: bold;
 }
@@ -316,7 +299,10 @@ form input[type="radio"] {
 
 form textarea {
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
+    min-width: 150px;
+    min-height: 100px;
+    max-height: 150px;
 }
 
 #form-title {
@@ -361,11 +347,11 @@ form input[type="submit"] {
 }
 
 #silver {
-    color: rgb(133, 133, 133);
+    color: rgb(86, 86, 86);
 }
 
 #gold {
-    color: rgb(182, 154, 0);
+    color: rgb(118, 100, 0);
 }
 
 #thanks {
@@ -471,4 +457,52 @@ form input[type="submit"] {
 .list-mode a {
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.417);
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+#banner h1 {
+    position: absolute;
+    background-color: #0A090C;
+    color: #FF9505;
+    padding: 6rem;
+    border: 2px solid #49C6E5;
+    font-size: 5vw;
+    max-height: 200px;
+    margin: 10px;
+}
+
+#banner button {
+    position: relative;
+    top: 12%;
+    padding: 1rem;
+    background: #0A090C;
+    border: 1px solid #49C6E5;
+    color: #F4EDED;
+}
+
+#banner button:hover {
+    border: 2px solid #FF9505;
+    cursor: pointer;
+}
+
+body.dark {
+    background: #444444;
+}
+
+.outside.dark, #form.dark {
+    color: #F4EDED;
 }
