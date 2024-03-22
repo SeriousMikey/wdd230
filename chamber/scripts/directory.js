@@ -1,6 +1,6 @@
 let baseURL = "https://seriousmikey.github.io/wdd230/";
-// let linksURL = "https://seriousmikey.github.io/wdd230/chamber/data/members.json";
-let linksURL = "data/members.json";
+let linksURL = "https://seriousmikey.github.io/wdd230/chamber/data/members.json";
+// let linksURL = "data/members.json";
 let display = document.querySelector("#display");
 let gridbutton = document.querySelector("#grid-mode");
 let listbutton = document.querySelector("#list-mode");
@@ -44,13 +44,13 @@ const displayLinks = (members) => {
             url.setAttribute("target", "_blank");
             url.textContent = "Website URL";
 
-            if (member.level == "bronze"){
+            if (member.level == "Bronze"){
                 level.textContent = "Member Level: 🤎";
             }
-            else if (member.level == "silver"){
+            else if (member.level == "Silver"){
                 level.textContent = "Member Level: 🩶";
             }
-            else if (member.level == "gold"){
+            else if (member.level == "Gold"){
                 level.textContent = "Member Level: 💛";
             }
             else {
