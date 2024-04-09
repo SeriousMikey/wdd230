@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-style: Lato;
+    background: #E9D985;
+}
+
+.clouds {
+    display: none;
+    border: none;
+}
+
+header {
+    width: 100%;
+    background: #002A72;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 65%;
+    max-width: 320px;
+    border: 1px solid #00bd9b;
+    margin: 20px;
+}
+
+nav {
+    background: #00bd9b;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+}
+
+nav a {
+    color: #001230;
+    text-decoration: none;
+    display: none;
+    font-size: large;
+    border: 1px solid #00614f61;
+}
+
+nav a:hover {
+    background: #002A72;
+    color: white;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: #00bd9b;
+    border: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+    font-size: 1.5rem;
+    color: black;
+}
+
+.open a {
+	display: block;
+}
+
+nav a.active::before {
+    content: "-> ";
+    color: #F4EDED;
+}
+
+nav a.active::after {
+    content: " <-";
+    color: #F4EDED;
+}
+
+#banner {
+    width: 100%;
+    max-width: 70%;
+    min-width: 350px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 100px;
+    padding: 10px;
+    border: 2px solid #00bd9b;
+    background: white;
+}
+
+#info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+#call_to_action {
+    border: 3px solid #00bd9b;
+    grid-template-columns: 1fr;
+    background: white;
+    align-items: center;
+}
+
+#call_to_action img {
+    grid-column: 1/2;
+    max-width: 90%;
+    border: 1px solid #002A72;
+    margin: auto;
+}
+
+#call_to_action p {
+    grid-column: 2/3;
+    text-align: center;
+    margin: 15px 0;
+}
+
+#call_to_action button {
+    margin: 15px 40% 0 40%;
+    border-radius: 5px;
+    background: #002A72;
+    border: 2px solid #00bd9b;
+    color: white;
+    
+}
+
+#call_to_action button:hover {
+    background: #00bd9b;
+    border: 2px solid #002A72;
+    color: black;
+    cursor: pointer;
+}
+
+#call_to_action, #weather {
+    padding: 20px;
+    display: grid;
+    border-radius: 20px;
+    margin: 2rem auto;
+    min-width: 300px;
+    width: 40%;
+}
+
+#weather {
+    border: 3px solid #002A72;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #00bd9b;
+}
+
+#weather img {
+    border: 2px solid black;
+    background: #002A72;
+    border-radius: 20px;
+    padding: 5px;
+    max-width: 50px;
+}
+
+#weather h1, #weather p {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+#today_weather {
+    grid-column: 1/2;
+}
+
+#tomorrow_weather {
+    grid-column: 2/3;
+}
+
+#day_after_weather {
+    grid-column: 3/4
+}
+
+#today_weather, #tomorrow_weather, #day_after_weather {
+    max-width: 100px;
+    border: 3px solid #002A72;
+    background: white;
+    border-radius: 5px;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#learn_more {
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: underline;
+    color: black;
+}
+
+#models {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 100px;
+	justify-items: center;
+    padding: 50px;
+
+}
+
+#models a {
+    text-decoration: none;
+}
+
+.model {
+    border: 1px solid #00bd9b;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    width: fit-content;
+    max-width: 300px;
+    min-height: 350px;
+    max-height: 350px;
+    margin: 10px auto;
+    text-wrap: pretty;
+    align-content: center;
+    color: black;
+}
+
+.model:hover {
+    cursor: pointer;
+}
+
+.model img {
+    display: inline;
+    max-width: 300px;
+}
+
+#more_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.info_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 50%;
+    max-width: 550px;
+    min-width: 300px;
+    text-align: center;
+    background: white;
+    align-items: center;
+    margin: 20px;
+}
+
+.info_card h1 {
+    grid-column: 1/3;
+    align-self: normal;
+}
+
+
+.info_card img{
+    grid-column: 1/2;
+    max-width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.info_card ul {
+    grid-column: 2/3;
+    text-align: left;
+    font-size: medium;
+}
+
+.customer_reviews {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.customer_reviews h2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.review_card {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.review_card h3 {
+    display: inline;
+}
+
+.review_card h3::before {
+    content: "🤓"
+}
+
+footer {
+    background: #002A72;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 40px;
+}
+
+footer a {
+    display: block;
+    color: black;
+    margin: 10px;
+}
+
+footer img {
+    margin: auto;
+    width: 100%;
+    border: 1px solid #00bd9b;
+}
+
+#about_me, #socials {
+    padding: 10px;
+    border: 1px solid #00bd9b;
+    background: white;
+    width: 50%;
+    border-radius: 100px;
+}
+
+
+
+table {
+    background: white;
+    border: 1px solid #001230;
+    border-collapse: collapse;
+    margin: 30px auto;
+    text-align: center;
+}
+
+table img {
+    max-width: 70%;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+td {
+    border-right: 1px solid #001230;
+    border-top: 1px solid #001230;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+th {
+    background: #002A72;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-right: 1px solid #002A72;
+    border-bottom: 1px solid #002A72;
+    font-size: larger;
+}
+
+#table_title {
+    background: black;
+    color: white;
+    border: none;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #00bd9b;
+}
+
+#placeholder {
+    background: black;
+    border-right: 1px solid black;
+    color: black;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+fieldset {
+    grid-column: 1/2;
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border: 1px solid black;
+}
+
+#submit_button {
+    grid-column: 1/2;
+    width: 400px;
+    justify-self: center;
+    background: #00bd9b;
+    border: 1px solid #002A72;
+    border-radius: 10px;
+}
+
+#submit_button:hover {
+    background: #002A72;
+    border: 1px solid #00bd9b;
+    color: white;
+    cursor: pointer;
+}
+
+#form-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin: 15px;
+}
+
+#rental_agreement {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    background: #002A72;
+    border: 1px solid #00bd9b;
+    color: white;
+    align-self: center;
+}
+
+#rental_agreement h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+#rental_agreement ul li{
+    margin: 10px;
+}
+
+#thanks {
+    text-align: center;
+    margin-top: 20%;
+}
+
+#home-button, #contact_button {
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background: #00bd9b;
+    border: 1px solid #002A72;
+}
+
+#home-button:hover, #contact_button:hover {
+    background: #002A72;
+    border: 1px solid #00bd9b;
+    color: white;
+}
+
+#home-container {
+    text-align: center;
+}
+
+#contact_info {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #002A72;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+#contact_us {
+    max-width: 50%;
+}

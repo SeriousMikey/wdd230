@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~</title>
+    <meta name="author" content="Michael Hyer">
+    <meta 
+    name="description" 
+    content="A school project about a fictional company in Cozumel named Scoots.">
+    <meta property="og:title" content="~Scoots~">
+    <meta property="og:description" content="Explore the beautiful world of Cozumel with Scoots!">
+    <meta property="og:url" content="https://seriousmikey.github.io/wdd230/scooters/index.html">
+    <meta property="og:image" content="images/optimized/logo.webp">
+    <meta property="og:type" content="Website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img class ="clouds" src="images/optimized/clouds.webp" alt="clouds">
+        <img src="images/optimized/logo.webp" alt="Scoots Logo">
+        <img class="clouds" src="images/optimized/clouds.webp" alt="clouds">
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+    <main>
+        <section id="contact_info">
+            <h1>Contact Information</h1>
+            <p>Phone Number: 123-456-7890</p>
+            <p>Email: someone@email.com</p>
+            <p>Facebook: facebook.com</p>
+            <p>Twitter: twitter.com</p>
+            <p>Instagram: instagram.com</p>
+            <h2>OR</h2>
+            <form id="contact_us">
+                <fieldset>
+                    <label>Your Name: <input type="text" value="" required></label>
+                    <label>Your Email: <input type="email" value="" required></label>
+                    <label>What would you like to tell us? <textarea></textarea></label>
+                </fieldset>
+                <input type="submit" id="contact_button" value="Send Your Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="about_me">
+            <h2>About</h2>
+            <p>Author: Michael Hyer</p>
+            <p>copyright 2024</p>
+            <a href="attributions.txt">Attributions</a>
+        </section>
+        <img src="images/optimized/logo.webp" alt="Logo">
+        <section id="socials">
+            <h2>Socials</h2>
+            <a href="www.facebook.com" target="_blank">Facebook</a>
+            <a href="www.x.com" target="_blank">Twitter</a>
+            <a href="www.instagram.com" target="_blank">Instagram</a>
+        </section>
+    </footer>
+    <script src="scripts/hamburgermenu.js"></script>
+</body>
+</html>

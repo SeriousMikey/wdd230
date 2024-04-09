@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~</title>
+    <meta name="author" content="Michael Hyer">
+    <meta 
+    name="description" 
+    content="A school project about a fictional company in Cozumel named Scoots.">
+    <meta property="og:title" content="~Scoots~">
+    <meta property="og:description" content="Explore the beautiful world of Cozumel with Scoots!">
+    <meta property="og:url" content="https://seriousmikey.github.io/wdd230/scooters/index.html">
+    <meta property="og:image" content="images/optimized/logo.webp">
+    <meta property="og:type" content="Website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img class ="clouds" src="images/optimized/clouds.webp" alt="clouds">
+        <img src="images/optimized/logo.webp" alt="Scoots Logo">
+        <img class="clouds" src="images/optimized/clouds.webp" alt="clouds">
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="reservations.html" class="active">Reservations</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <h1 id="form-title">Rental Request Form</h1>
+        <form id="form" method="get" action="thankyou.html">
+            <fieldset>
+                <div>Personal Information</div>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="someone@email.com" required></label>
+                <label>Phone* Number <input type="tel" name="phone" id="phone" required></label>
+                <label>Home Country <input type="text"></label>
+            </fieldset>
+            <fieldset>
+                <div>Rental Information</div>
+                <label><input type="radio" name="rental_type" value="Honda Metro Scooter" required> Honda Metro Scooter</label>
+                <label><input type="radio" name="rental_type" value="Honda Dio Scooter" required> Honda Dio Scooter</label>
+                <label><input type="radio" name="rental_type" value="Honda PCX150 Scooter" required> Honda PCX150 Scooter</label>
+                <label><input type="radio" name="rental_type" value="Honda Pioneer ATV" required> Honda Pioneer ATV</label>
+                <label><input type="radio" name="rental_type" value="Jeep Wrangler - 4 door with a/c" required> Jeep Wrangler - 4 door with a/c</label>
+                <label><input type="radio" name="rental_type" value="Jeep Wrangler - 2 door" required> Jeep Wrangler - 2 door</label>
+
+                <div>Location</div>
+                <label><input type="radio" name="location" required>Near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</label>
+                <label><input type="radio" name="location" required>Near the Terminal Puerta Maya</label>
+                <label>Date and Time* <input type="datetime-local" required></label>
+                <label>Special Accomodations <textarea></textarea></label>
+
+            </fieldset>
+            <input type="submit" id="submit_button" value="Rent Your Vehicle!">
+
+            <section id="rental_agreement">
+                <h2>Rental Services and Agreements</h2>
+                <hr>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <section id="about_me">
+            <h2>About</h2>
+            <p>Author: Michael Hyer</p>
+            <p>copyright 2024</p>
+            <a href="attributions.txt">Attributions</a>
+        </section>
+        <img src="images/optimized/logo.webp" alt="Logo">
+        <section id="socials">
+            <h2>Socials</h2>
+            <a href="www.facebook.com" target="_blank">Facebook</a>
+            <a href="www.x.com" target="_blank">Twitter</a>
+            <a href="www.instagram.com" target="_blank">Instagram</a>
+        </section>
+    </footer>
+    <script src="scripts/hamburgermenu.js"></script>
+</body>
+</html>

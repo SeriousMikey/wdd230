@@ -1,0 +1,82 @@
+{
+    "rentals": [
+        {
+            "type": "Honda Metro Scooter",
+            "image": "images/optimized/honda_metro_scooter.webp",
+            "max_persons": 1,
+            "reservation_half_price": 20,
+            "reservation_full_price": 30,
+            "walkin_half_price": 25,
+            "walkin_full_price": 35,
+            "function1": "V-Matic Automatic Transmission",
+            "function2": "Programmed Fuel Injection (PGM-FI)",
+            "function3": "22-Liter Underseat Storage",
+            "function4": "Combined Breaking System"
+        },
+        {
+            "type": "Honda Dio Scooter",
+            "image": "images/optimized/honda_dio_scooter.webp",
+            "max_persons": 2,
+            "reservation_half_price": 30,
+            "reservation_full_price": 40,
+            "walkin_half_price": 35,
+            "walkin_full_price": 45,
+            "function1": "Secured Key Shutter with Seat Opener",
+            "function2": "Spacious U-Box",
+            "function3": "Wide Dual Seats",
+            "function4": "Informative Meter Panel"
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "image": "images/optimized/honda_pcx150_scooter.webp",
+            "max_persons": 2,
+            "reservation_half_price": 40,
+            "reservation_full_price": 50,
+            "walkin_half_price": 45,
+            "walkin_full_price": 55,
+            "function1": "Rider Comfrot",
+            "function2": "Under-Seat Storage",
+            "function3": "Anti-Lock Brakes",
+            "function4": "4-Valve Engine"
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "image": "images/optimized/honda_pioneer_atv.webp",
+            "max_persons": 4,
+            "reservation_half_price": 50,
+            "reservation_full_price": 70,
+            "walkin_half_price": 60,
+            "walkin_full_price": 80,
+            "function1": "i-4WD System",
+            "function2": "More Powerful 999cc Twin-Cylinder Engine",
+            "function3": "Chassis and Suspension",
+            "function4": "Forest and Trail Models"
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "image": "images/optimized/jeep_wrangler_4_door.webp",
+            "max_persons": 5,
+            "reservation_half_price": 70,
+            "reservation_full_price": 100,
+            "walkin_half_price": 85,
+            "walkin_full_price": 125,
+            "function1": "Six-Speed Manual Gearbox",
+            "function2": "285-hp 3.6-liter V-6 Engine",
+            "function3": "Off-Road Ready",
+            "function4": "60 MPH in 6.1 Seconds"
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "image": "images/optimized/jeep_wrangler_2_door.webp",
+            "max_persons": 4,
+            "reservation_half_price": 60,
+            "reservation_full_price": 85,
+            "walkin_half_price": 70,
+            "walkin_full_price": 90,
+            "function1": "Eight-Speed Automatic Gearbox",
+            "function2": "Turbocharged Four-Cylinder Engine",
+            "function3": "375-HP Plug-In Hybride 4XE Powertrain",
+            "function4": "60 MPH in 4.0 Seconds"
+        }
+    ]
+}

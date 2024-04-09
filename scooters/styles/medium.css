@@ -1,0 +1,53 @@
+/* Viewport 701 to 1000 */
+
+@media screen and (min-width: 701px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        flex: 1 1 100%;
+        border: none;
+        border-left: 1px solid #002A72;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header img {
+        margin: auto;
+    }
+
+    #banner {
+        max-width: 70%;
+        min-width: 600px;
+    }
+
+    #call_to_action, #weather {
+        min-width: 500px;
+        width: 40%;
+    }
+
+    .info_card {
+        width: 50%;
+        max-width: 750px;
+        min-width: 500px;
+    }
+
+    .info_card ul {
+        font-size: larger;
+    }
+
+    footer img {
+        width: 70%;
+    }
+
+    #contact_us {
+        margin: auto;
+    }
+}

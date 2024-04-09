@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+header {
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 10px;
+    border: 2px solid #31FFD9;
+    border-radius: 50px;
+    max-width: 30%;
+    background: black;
+    color: white;
+}
+
+.info {
+    background: rgb(221, 221, 221);
+    color: black;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 30px;
+    margin: 1.5rem auto;
+    padding: 15px;
+    max-width: 45%;
+    text-align: center;
+}
+
+#headings {
+    color: #002A72;
+}
+
+#paragraphs {
+    color: #000000;
+}
+
+#background {
+    color: #E9D985;
+    background: black;
+    max-width: fit-content;
+    margin: auto;
+}
+
+#accent {
+    color: #00bd9b;
+    background: black;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.font-example {
+    font-family: Lato;
+}
+
+h2 {
+    border: 1px solid black;
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+    background: white;
+}
